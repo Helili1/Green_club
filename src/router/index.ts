@@ -14,6 +14,12 @@ const router = createRouter({
       component: () => import('../pages/AboutGolf.vue')
     },
     {
+      // Динамический маршрут для статей
+      path: '/about-golf/:slug',
+      name: 'article',
+      component: () => import('../components/ArticlePage.vue')
+    },
+    {
       path: '/academy',
       name: 'academy',
       component: () => import('../pages/Academy.vue')
@@ -32,6 +38,12 @@ const router = createRouter({
       path: '/contacts',
       name: 'contacts',
       component: () => import('../pages/Contacts.vue')
+    },
+    {
+      // 404
+      path: '/:pathMatch(.*)*',
+      name: 'not-found',
+      component: () => import('../pages/NotFound.vue')
     }
   ],
   scrollBehavior() {

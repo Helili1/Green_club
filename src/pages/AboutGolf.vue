@@ -59,59 +59,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-
-interface Article {
-  slug: string
-  title: string
-  description: string
-  icon: string
-}
-
-const articles = ref<Article[]>([
-  {
-    slug: 'history',
-    title: 'История гольфа',
-    description: 'От средневековой Шотландии до современных турниров. Как гольф стал одним из самых популярных видов спорта в мире.',
-    icon: '📜',                            
-    coverImage: '/history_arc.png'
-  },
-  {
-    slug: 'rules',
-    title: 'Правила гольфа',
-    description: 'Основные правила игры, подсчёт очков, этикет на поле. Всё, что нужно знать начинающему гольфисту.',
-    icon: '📋',                           
-    coverImage: '/rules_arc.png' 
-  },
-  {
-    slug: 'equipment',
-    title: 'Спортивный инвентарь',
-    description: 'Мячи, перчатки, сумки, одежда. Как выбрать правильное снаряжение для комфортной игры.',
-    icon: '🎒',                            
-    coverImage: '/equipment_arc.png'
-  },
-  {
-    slug: 'clubs',
-    title: 'Типы клюшек',
-    description: 'Драйверы, вуди, айроны, веджи, паттеры. Разбираемся в многообразии клюшек и их назначении.',
-    icon: '🏌️',                            
-    coverImage: '/clubs_arc.png'
-  },
-  {
-    slug: 'facts',
-    title: '10 интересных фактов',
-    description: 'Удивительные факты о гольфе, которые вас удивят. От рекордов до интересных традиций.',
-    icon: '💡',                            
-    coverImage: '/facts_arc.png'
-  },
-  {
-    slug: 'where-to-train',
-    title: 'Где можно тренироваться',
-    description: 'Типы полей для гольфа, тренировочные зоны, симуляторы. Где и как лучше всего обучаться.',
-    icon: '🌳',                            
-    coverImage: '/to_train_arc.png'
-  }
-])
+import { articles } from '../data/article.ts'
 </script>
 
 <style scoped lang="scss">
