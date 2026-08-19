@@ -1,0 +1,26 @@
+# Зависимости
+node_modules/
+
+# Сборка
+dist/
+dist-ssr/
+
+# Логи
+*.log
+npm-debug.log*
+
+# Редакторы
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+.env.local
+.env.*.local

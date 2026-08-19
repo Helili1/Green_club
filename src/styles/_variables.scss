@@ -1,0 +1,49 @@
+// Цветовая палитра
+$color-primary: #3a7d44;
+$color-primary-dark: #2d5016;
+$color-primary-light: #4a9d5a;
+
+$color-white: #ffffff;
+$color-light-gray: #f5f5f5;
+$color-gray: #6b7280;
+$color-dark-gray: #2d2d2d;
+$color-black: #1a1a1a;
+
+// Светлая тема
+$light-bg: $color-white;
+$light-text: $color-black;
+$light-card-bg: $color-white;
+$light-border: #e5e7eb;
+
+// Тёмная тема
+$dark-bg: $color-black;
+$dark-text: #e0e0e0;
+$dark-card-bg: $color-dark-gray;
+$dark-border: #404040;
+
+// Отступы
+$spacing-xs: 0.5rem;
+$spacing-sm: 1rem;
+$spacing-md: 1.5rem;
+$spacing-lg: 2rem;
+$spacing-xl: 3rem;
+
+// Контейнер
+$container-max-width: 1200px;
+$container-padding: 1.5rem;
+
+// Скругления
+$border-radius-sm: 4px;
+$border-radius-md: 8px;
+$border-radius-lg: 12px;
+
+// Тени
+$shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 8px rgba(0, 0, 0, 0.15);
+$shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.2);
+
+// Брейкпоинты
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
