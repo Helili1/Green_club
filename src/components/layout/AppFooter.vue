@@ -18,6 +18,8 @@
             <router-link to="/">Главная</router-link>
             <router-link to="/about-golf">О гольфе</router-link>
             <router-link to="/academy">Академия</router-link>
+            <router-link to="/schedule">Расписание</router-link>
+            <router-link to="/coaches">Тренеры</router-link> 
             <router-link to="/contacts">Контакты</router-link>
           </nav>
         </div>
@@ -89,7 +91,10 @@
     gap: 0.75rem;
     
     a {
+      display: block;
+      padding: 0.35rem 0;
       transition: color 0.2s;
+      color: var(--text-color);
       
       &:hover {
         color: var(--primary-color);
@@ -100,6 +105,7 @@
   &__contacts {
     p {
       margin-bottom: 0.5rem;
+      color: var(--text-color);
     }
   }
   
@@ -108,6 +114,26 @@
     border-top: 1px solid var(--border-color);
     text-align: center;
     opacity: 0.7;
+    color: var(--text-color);
+  }
+}
+
+// Мобильная адаптивность
+@media (max-width: 768px) {
+  .footer {
+    &__content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    &__nav {
+      gap: 0.5rem;
+      
+      a {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+      }
+    }
   }
 }
 </style>

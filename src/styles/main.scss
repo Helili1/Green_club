@@ -45,3 +45,48 @@ h4 { font-size: 1.25rem; }
 p {
   margin-bottom: $spacing-sm;
 }
+
+// Улучшенная типографика для мобильных
+@media (max-width: 768px) {
+  html {
+    font-size: 15px; // Чуть меньше базовый размер
+  }
+  
+  h1 { font-size: 1.875rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.25rem; }
+  
+  p {
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__content {
+      grid-template-columns: 1fr !important;
+      gap: 2rem;
+    }
+    
+    &__links,
+    &__contacts {
+      text-align: left; // Выравнивание по левому краю
+    }
+    
+    &__bottom {
+      text-align: center;
+    }
+  }
+}
+
+// Запрет горизонтального скролла
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+// Улучшение тач-интерфейса
+button, a, [role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
