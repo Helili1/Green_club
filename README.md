@@ -7,7 +7,7 @@
 ![Vite](https://img.shields.io/badge/Vite-5.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![SCSS](https://img.shields.io/badge/SCSS-Modules-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-[🌐 Демо](https://helili1.github.io/Green_club/) • [💼 Мой GitHub](https://github.com/helili1)
+[🌐 Демо](https://green-club-murex.vercel.app) • [💼 Мой GitHub](https://github.com/helili1)
 
 ---
 
